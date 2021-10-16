@@ -9,6 +9,13 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PeopleListComponent } from './people-list/people-list.component';
+import { Page404Component } from './page404/page404.component';
+import {HttpClientModule} from '@angular/common/http';
+
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddUserComponent } from './add-user/add-user.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +25,17 @@ import { PeopleListComponent } from './people-list/people-list.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    PeopleListComponent
+    PeopleListComponent,
+    Page404Component,
+    AddUserComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

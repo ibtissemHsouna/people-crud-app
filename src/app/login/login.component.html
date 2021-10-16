@@ -1,5 +1,4 @@
 <app-navbar></app-navbar>
-
 <div class="container my-5">
     <form [formGroup]="loginForm" (ngSubmit)="login()">
         <div class="form-group">
@@ -21,6 +20,4 @@
         <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
     </form>
 </div>
-
-
 <app-footer></app-footer>
